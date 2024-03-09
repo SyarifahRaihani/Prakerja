@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\SiswaController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -37,3 +38,5 @@ Route::get('template', function () {
 Route::get('dashboard', function () {
     return view('dashboard');
 });
+
+Route::get('siswa', [SiswaController::class, 'index']);
