@@ -29,3 +29,11 @@ Route::get('/hadir/{name}/{class}', function($name, $class) {
 Route::get('angka/{angka1}/{angka2}', function ($angka1, $angka2) {
     return 'penjumlahan : '. $angka1 + $angka2;
 });
+
+Route::get('template', function () {
+    return view('template');
+});
+
+Route::get('dashboard', function () {
+    return view('dashboard');
+});
