@@ -35,8 +35,8 @@ Route::get('template', function () {
     return view('template');
 });
 
-Route::get('dashboard', function () {
-    return view('dashboard');
-});
 
-Route::get('siswa', [SiswaController::class, 'index']);
+
+Route::get('dashboard', [SiswaController::class, 'index']);
+
+Route::resource('siswa', SiswaController::class);

@@ -43,7 +43,12 @@
                 <!-- End of Topbar -->
 
                 <!-- Begin Page Content -->
+                <div class="container-fluid">
+
+                @include('flashmessage')
                 @yield('content')
+
+                </div>
                 <!-- /.container-fluid -->
 
             </div>
