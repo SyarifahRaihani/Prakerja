@@ -1,5 +1,8 @@
 <?php
 
+use App\Http\Controllers\KategoriController;
+use App\Http\Controllers\PostController;
+use App\Http\Controllers\ProdukController;
 use App\Http\Controllers\SiswaController;
 use Illuminate\Support\Facades\Route;
 
@@ -37,6 +40,11 @@ Route::get('template', function () {
 
 
 
-Route::get('dashboard', [SiswaController::class, 'index']);
 
 Route::resource('siswa', SiswaController::class);
+
+Route::resource('post', PostController::class);
+
+Route::resource('kategori', KategoriController::class);
+
+Route::resource('produk', ProdukController::class);
